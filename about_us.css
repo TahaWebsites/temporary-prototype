@@ -1,0 +1,452 @@
+@media (min-width: 1024px) {
+
+    body {
+        background-color: black;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav {
+        /* Size */
+        width: 100%;
+        min-height: 10vh;
+        height: 10vh;
+        max-height: 10vh;
+
+        /* Margins and Paddings */
+        padding: 0;
+
+        /* Display Code */
+        display: flex;
+        justify-content: space-between;
+
+        background-color: black;
+        color: white;
+
+        /* Positions */
+
+        position: fixed;
+        top: 0%;
+        z-index: 9;
+
+    }
+
+    .nav div {
+        border: 1px solid black;
+        height: 100%;
+    }
+
+    /* Nav Arrangements */
+
+    .nav a,
+    .nav-links li {
+        color: white;
+    }
+
+    .title,
+    .nav-links,
+    .join {
+        font-family: 'Caladea', serif;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        width: 20%;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        width: 70%;
+    }
+
+    .join {
+        width: 10%;
+    }
+
+    .nav-links ul {
+        display: flex;
+        width: 100%;
+        min-height: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .join {
+        background-color: white;
+        height: 100%;
+    }
+
+    .join a {
+        color: red;
+        /* border: 1px solid red; */
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+
+    .join a:hover {
+        background-color: white;
+        border: none;
+        color: black;
+    }
+
+    .nav-links a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .nav-links a:hover {
+        border-bottom: 5px solid white;
+        background-color: rgba(255, 255, 255, 0.25);
+
+    }
+
+    .join_now a:hover {
+        background-color: rgb(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    /* Nav arrangements ends */
+
+    .main {
+        padding: 3rem 5rem;
+    }
+
+    .container {
+        background-color: white;
+        color: black;
+        display: flex;
+        margin-top: 5vh;
+    }
+
+    .textContent {
+        width: 100%;
+        height: 100%;
+        padding: 3rem;
+    }
+
+    .textContent h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    .container p {
+        color: black;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .container img {
+        width: 20rem;
+    }
+
+    /* Footer Styling Begins */
+
+    .footer {
+        border-top: 1px solid white;
+        background-color: black;
+        min-height: 50vh;
+        height: 50vh;
+        width: 100%;
+        padding: 3rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Caladea', sans-serif;
+    }
+
+    .linkss, .address, .times {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linkss, .address {
+        border-right: 1px solid white;
+    }
+
+    .links-title {
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 2rem 0;
+    }
+
+    .socials {
+        display: flex;
+        width: 100%;
+        margin: 0.5rem 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .socials i {
+        margin: 0 1rem 0 0;
+        font-size: 2rem;
+    }
+
+    .address {
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .address p {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .times a {
+        padding: 1rem 2rem;
+        background-color: white;
+        color: black;
+        margin: 2rem 0;
+        font-weight: 600;
+    }
+
+    .times a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+    
+    /* Footer Styling Ends */
+
+}
+
+@media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        width: 100%;
+        min-height: 100%;
+        height: 100%;
+        background-color: black;
+    }
+
+    /* Nav Configuration Begins */
+
+    .menu {
+        margin: 0 1rem 0 0;
+    }
+
+    .line {
+        width: 40px;
+        height: 7.5px;
+        background-color: white;
+        margin: 2px 0;
+        border-radius: 10px;
+    }
+
+    .nav {
+        /* Size */
+        width: 100%;
+        height: 8vh;
+        min-height: 8vh;
+        max-height: 8vh;
+
+        /* Margins and Paddings */
+        padding: 0;
+
+        /* Display Code */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: black;
+        color: white;
+
+        position: fixed;
+        top: 0%;
+    }
+
+    .nav a,
+    .nav-links li {
+        color: white;
+    }
+
+    .title,
+    .nav-links,
+    .join {
+        font-family: 'Caladea', serif;
+        padding: 0.75rem 0;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .join {
+        display: none;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 8vh;
+        min-height: 92vh;
+        width: 80%;
+        background-color: black;
+        /* display: none; */
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .nav-links ul {
+        height: 92vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .nav-links ul a {
+        border-top: 0.5px solid white;
+        border-bottom: 0.5px solid white;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Nav Configuration Ends */
+
+    /* Footer Styling Begins */
+
+    .footer {
+        background-color: black;
+        min-height: 50vh;
+        width: 100%;
+        /* padding: 3rem; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Caladea', sans-serif;
+    }
+
+    .linkss, .address, .times {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+
+
+    .links-title {
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 2rem 0;
+    }
+
+    .socials {
+        display: flex;
+        width: 100%;
+        margin: 0.5rem 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .socials i {
+        margin: 0 1rem 0 0;
+        font-size: 2rem;
+    }
+
+    .address {
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .address p {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .times a {
+        padding: 1rem 2rem;
+        background-color: white;
+        color: black;
+        margin: 2rem 0;
+    }
+
+    .times a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+
+    /*  */
+
+    .main {
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+        border-bottom: 3px solid white;
+    }
+
+    .container img {
+        width: 100%;
+    }
+    .container h1, .container p {
+        margin: 1rem 0;
+    }
+
+    .textContent {
+        margin: 1rem 0;
+        gap: 1rem;
+        text-align: justify;
+    }
+
+    .container2, .container4 {
+        flex-direction: column-reverse;
+    }
+    
+    /* Footer Styling Ends */
+}

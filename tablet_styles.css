@@ -1,0 +1,805 @@
+/* Tablet Size */
+@media (min-width: 768px) and (max-width: 1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        width: 100%;
+        min-height: 100%;
+        height: 100%;
+        background-color: black;
+    }
+
+    /* Nav Configuration Begins */
+
+    .menu {
+        margin: 0 1rem 0 0;
+    }
+
+    .line {
+        width: 40px;
+        height: 7.5px;
+        background-color: white;
+        margin: 2px 0;
+        border-radius: 10px;
+    }
+
+    .nav {
+        /* Size */
+        width: 100%;
+        height: 8vh;
+        min-height: 8vh;
+        max-height: 8vh;
+
+        /* Margins and Paddings */
+        padding: 0;
+
+        /* Display Code */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: black;
+        color: white;
+
+        position: fixed;
+        top: 0%;
+    }
+
+    .nav a,
+    .nav-links li {
+        color: white;
+    }
+
+    .title,
+    .nav-links,
+    .join {
+        font-family: 'Caladea', serif;
+        padding: 0.75rem 0;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .join {
+        display: none;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 8vh;
+        min-height: 92vh;
+        width: 80%;
+        background-color: black;
+        /* display: none; */
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .nav-links ul {
+        height: 92vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .nav-links ul a {
+        border-top: 0.5px solid white;
+        border-bottom: 0.5px solid white;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Nav Configuration Ends */
+
+    /* Main-Section Configuration Begins */
+    .main-container-bg {
+        /* Size */
+        width: 100%;
+        min-height: 90vh;
+
+        margin-top: 10vh;
+
+        /* Background Configuration */
+        background-image: url(https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main-container {
+        /* Size */
+        width: 100%;
+        min-height: 90vh;
+
+        /* Blur Background */
+        background-color: rgba(0, 0, 0, 0.75);
+
+        padding: 7rem 2rem;
+
+    }
+
+    .main-container p,
+    .main-container h1,
+    .main-container a {
+        margin: 2rem 0;
+    }
+
+    .book_now {
+        background-color: white;
+        color: black;
+        width: 7rem;
+        padding: 1rem;
+        margin-top: 2rem;
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Caladea', serif;
+    }
+
+    /* Main-Section Configuration Ends */
+
+    /* About Gym Section Begins */
+
+    .about img {
+        display: none;
+    }
+
+    .aboutContent {
+        padding: 5rem 2rem;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
+    .aboutContent a {
+        background-color: white;
+        color: black;
+        width: 7rem;
+        padding: 1rem;
+        margin-top: 2rem;
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Caladea', serif;
+    }
+
+    .aboutContent p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .aboutContent h2,
+    .aboutContent p,
+    .aboutContent a {
+        margin: 2.5rem 0;
+    }
+
+
+    /* About Gym Section Ends */
+
+    /* Services Stling Begins*/
+
+    .services {
+        color: white;
+        background-image: url(https://memberpress.com/wp-content/uploads/2015/11/fitness-membership-website.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        /* min-height: 70vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .services-main-container {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem 0 1rem;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .services-container {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .services h1 {
+        height: 10%;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+
+    .containers {
+        width: 80%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25rem;
+        font-weight: 600;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .containers a {
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    .containers i {
+        margin: 0 1rem;
+    }
+
+    .container-top,
+    .container-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+
+    .container-top div,
+    .container-bottom div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid white;
+        border-radius: 1rem;
+        margin: 0.5rem;
+    }
+
+
+
+    .service3 {
+        /* position: absolute;
+        background-color: white;
+        color: black;
+        border: 5px solid white;
+        border-radius: 100%;
+        display: flex;
+        width: 30%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+        display: none;
+    }
+
+    /* Services Styling Ends */
+
+    /* Prices Styling */
+
+    .prices {
+        width: 100%;
+        background-image: url(https://4.bp.blogspot.com/-pqL8QVJVlAk/WtdHRBZQk-I/AAAAAAAAivA/0uPVGOHOIuUB7NI-W9WpAYuYi70x3F3JQCLcBGAs/s640/Gym-and-Bodybuilding-Quotes-for-Workout-Motivation-header-image.jpg);
+        background-position: center;
+        background-size: cover;
+        font-size: 1.15rem;
+    }
+
+    .prices-container {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+
+    .prices-title {
+        text-align: center;
+        min-height: 10%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divs {
+        min-height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .plans {
+        border: 5px solid white;
+        border-radius: 5px;
+        background-color: black;
+        width: 80%;
+        height: 100%;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2rem;
+        gap: 30px;
+    }
+
+    .plans i {
+        font-size: 2rem;
+        background-color: white;
+        border-radius: 100%;
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plans a {
+        background-color: white;
+        color: black;
+        width: 100%;
+        padding: 1rem 0;
+        margin: 2rem 0;
+        text-align: center;
+        font-weight: 900;
+        font-family: 'Caladea', serif;
+    }
+
+    .pricetag {
+        color: red;
+        font-weight: 900;
+    }
+
+    .textContent {
+        text-align: center;
+        min-height: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        font-weight: 700;
+        padding: 0 1rem;
+    }
+
+    .textContent a {
+        color: red;
+    }
+
+
+    /* Prices Styling Ends */
+
+    /* Offer Styling Begins */
+
+    .offers {
+        color: white;
+        width: 100%;
+        min-height: 50vh;
+        height: 50vh;
+        background-image: url(https://img.freepik.com/premium-photo/3d-rendering-black-dumbbells-floor-dark-concept-fitness-room-with-training-equipments-back_67155-14961.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .off {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    .offer-container {
+        width: 70%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        border: 5px solid white;
+        border-radius: 1rem;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .offer-container a {
+        padding: 1rem 3rem;
+        background-color: white;
+        color: black;
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Caladea', serif;
+    }
+
+    .offer-container a:hover {
+        background-color: rgba(0, 0, 0, 0.75);
+        color: white;
+    }
+
+    /* Offer Styling Ends */
+
+    /* BMI Styling Begins */
+
+    .bmi {
+        width: 100%;
+        background-color: white;
+        color: black;
+    }
+
+    .text {
+        margin: 1rem 0;
+        gap: 10px;
+    }
+
+    .text p {
+        text-align: justify;
+    }
+
+    .container1 {
+        padding: 3rem;
+        min-height: 100%;
+        width: 100%;
+    }
+
+    .inputset1,
+    .inputset2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        /* min-height: 100%; */
+        /* margin: 0.5rem 0; */
+        /* padding: 0.5rem; */
+    }
+
+    
+
+    .form input,
+    .form select {
+        width: 100%;
+        padding: 0.5rem;
+        font-weight: bold;
+        margin: 0.5rem 0;
+        /* outline: none; */
+        border: 0.1px dashed black;
+    }
+
+    .calculate {
+        background-color: black;
+        color: white;
+        width: 100%;
+        padding: 1rem 0;
+        margin: 1rem 0;
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Caladea', serif;
+    }
+
+
+    /* Container 2 (datasets and result) */
+
+    .container2 {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .data {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .data div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .data p {
+        padding: 1rem 0;
+    }
+
+    .data-heading {
+        font-weight: 900;
+        border-bottom: 3px solid black;
+    }
+
+    .score p {
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .status p {
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .result {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 1.5rem 0;
+        font-family: 'Caladea', serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        border: 1px solid black;
+        /* background-color: black; */
+        color: black;
+        display: none;
+    }
+
+
+    /* BMI Styling Ends */
+
+    /* Quotes Styling Begins */
+    .quotes {
+        min-height: 50vh;
+        width: 100%;
+        background-image: url(https://static.wixstatic.com/media/b596b0_51e78f0d63004bc2a90e0a57126d6a84~mv2.png/v1/fill/w_320,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/b596b0_51e78f0d63004bc2a90e0a57126d6a84~mv2.png), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .quotes-container {
+        width: 100%;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-tc {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .quotes-quote {
+        font-size: 1.3rem;
+        font-weight: 400;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        min-width: 60%;
+        max-width: 60%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .left,
+    .right {
+        padding: 2rem 1rem;
+        color: black;
+        font-weight: 900;
+        font-size: 3rem;
+        color: rgb(187, 187, 187);
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .right ::selection{
+        background-color: none;
+        color: white;
+    }
+
+    .left ::selection{
+        background-color: none;
+        color: white;
+    }
+
+    .left:hover {
+        color: white;
+    }
+
+    .right:hover {
+        color: white;
+    }
+    /* Quotes Styling Ends */
+
+    .map {
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    .map iframe {
+        width: 100%;
+        min-height: 100%;
+        filter: invert(100%);
+    }
+
+    /* Reveiws Styling Begins */
+
+    .reviews {
+        background-color: white;
+        color: black;
+        width: 100%;
+        min-height: 80vh;
+    }
+
+    .reviews h1 {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .reviews-container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+    }
+
+    .readMore {
+        color: black;
+    }
+
+    .review img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        font-weight: 600;
+        width: 100%;
+        padding: 2rem;
+        justify-content: space-evenly;
+        font-family: 'Caladea', sans-serif;
+        border-radius: 2rem;
+        margin: 2rem 0;
+    }
+
+    .name {
+        font-weight: 900;
+        font-family: 'Caladea', sans-serif;
+    }
+
+    .review:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    .review img, .review p {
+        margin: 1rem 0;
+    }
+
+    .review p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    /* Reviews Styling Ends */
+
+    /* Footer Styling Begins */
+
+    .footer {
+        background-color: black;
+        min-height: 50vh;
+        width: 100%;
+        /* padding: 3rem; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Caladea', sans-serif;
+    }
+
+    .linkss, .address, .times {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+
+
+    .links-title {
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 2rem 0;
+    }
+
+    .socials {
+        display: flex;
+        width: 100%;
+        margin: 0.5rem 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .socials i {
+        margin: 0 1rem 0 0;
+        font-size: 2rem;
+    }
+
+    .address {
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .address p {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .times a {
+        padding: 1rem 2rem;
+        background-color: white;
+        color: black;
+        margin: 2rem 0;
+    }
+
+    .times a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+    
+    /* Footer Styling Ends */
+
+    .discount {
+        color: red;
+        animation: blink 1s infinite;
+        margin: 0 0.5rem;
+        font-size: 2rem;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+}

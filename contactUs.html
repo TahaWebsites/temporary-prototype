@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contactUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <div class="nav">
+
+
+        <div class="title">
+            <div class="menu">
+                <div class="line1 line"></div>
+                <div class="line2 line"></div>
+                <div class="line3 line"></div>
+            </div>
+            <b>
+                <h1 class="title-heading">CRANK GYM</h1>
+            </b>
+        </div>
+
+        <div class="nav-links">
+            <ul>
+                <a href="#" class="alinks">
+                    <li id="link1" class="links">Home</li>
+                </a>
+                <a href="gallery.html" class="alinks" target="_blank">
+                    <li id="link2" class="links">Gallery</li>
+                </a>
+                <a href="#" class="alinks">
+                    <li id="link3" class="links">Plans & Offers</li>
+                </a>
+                <a href="about_us.html" class="alinks" target="_blank">
+                    <li id="link4" class="links">About Us</li>
+                </a>
+                <a href="contactUs.html" class="alinks" target="_blank">
+                    <li id="link5" class="links">Contact Us</li>
+                </a>
+            </ul>
+            </ul>
+        </div>
+
+        <div class="join">
+            <a href="#" class="join-now">JOIN NOW!</a>
+        </div>
+    </div>
+    <div class="main">
+        <!-- <form action="https://formspree.io/f/xgejdpnr" method="post"> -->
+        <div class="main-container">
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/xgejdpnr" method="post">
+                    <h2>Contact Us</h2>
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" id="name" name="Name" required placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Age">Age</label>
+                        <input type="number" id="age" name="Age" required placeholder="Enter Your Age">
+                    </div>
+                    <div class="form-group">
+                        <label for="Mobile Number">Phone Number</label>
+                        <input type="number" id="mobnumber" name="Mobile Number" required placeholder="Enter Your Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="email" id="email" name="Email" required placeholder="Enter Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="Message">Message</label>
+                        <textarea id="message" name="Message" rows="4" required placeholder="Enter Your Message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                    <button type="reset" class="reset">Clear</button>
+                </form>
+        </div>
+          
+    </div>
+
+    <div class="footer">
+        <div class="links-title">CRANK GYM</div>
+        <div class="linkss">
+            <div class="socials facebook">
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                <a href="#">Follow Us on Facebook</a>
+            </div>
+            <div class="socials instagram">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <a href ="#">Follow Us on Instagram</a>
+            </div>
+            <div class="socials twiitter">
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <a href="#">Follow Us on Twitter</a>
+            </div>
+        </div>
+        <div class="address">
+            <p>Near Maphar Pearls, Rethibowli, Mehdipatnam, Hyderabad, India - 500028</p>
+            <p>Mail: crankgym@gmail.com</p>
+            <p>Mob: 123-456-7890</p>
+        </div>
+        <div class="times">
+            <p>GYM TIMING : 24/7</p>
+            <a href="#">BOOK NOW</a>
+        </div>
+    </div>
+
+    <script src="nav.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
